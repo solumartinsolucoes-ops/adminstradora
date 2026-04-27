@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solumartín Soluções Condominiais</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f1118;
+    color:#fff;
+}
+
+/* TOPO */
+header{
+    background:linear-gradient(135deg,#0c0f17,#112b63,#0c0f17);
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+header img{
+    width:180px;
+    max-width:90%;
+    margin-bottom:10px;
+}
+
+header h1{
+    font-size:38px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:18px;
+    color:#b9d7ff;
+    margin-bottom:18px;
+}
+
+.top-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.top-buttons a{
+    background:#1d4ed8;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.top-buttons a:hover{
+    background:#2563eb;
+    transform:translateY(-2px);
+}
+
+/* HERO */
+.hero{
+    padding:70px 20px;
+    text-align:center;
+    background:linear-gradient(to bottom,#10131d,#0f1118);
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#60a5fa;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+    color:#ddd;
+}
+
+/* SERVIÇOS */
+.section{
+    padding:70px 20px;
+    max-width:1300px;
+    margin:auto;
+}
+
+.section h3{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#60a5fa;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:linear-gradient(180deg,#161a26,#0d1118);
+    border:1px solid rgba(255,255,255,0.06);
+    padding:28px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+.card h4{
+    font-size:23px;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#d8d8d8;
+}
+
+/* FUNCIONALIDADES APP */
+.baloes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.balao{
+    text-align:center;
+}
+
+.circulo{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:15px;
+    background:linear-gradient(135deg,#5b21b6,#16a34a);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+    padding:20px;
+}
+
+.balao h5{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.balao p{
+    line-height:1.7;
+    color:#ddd;
+}
+
+/* DOWNLOAD */
+.download{
+    text-align:center;
+}
+
+.download p{
+    margin-bottom:25px;
+    font-size:20px;
+}
+
+.store-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.store-buttons a{
+    background:#111827;
+    border:1px solid #2563eb;
+    padding:15px 28px;
+    border-radius:12px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.store-buttons a:hover{
+    background:#2563eb;
+}
+
+/* CONTATO */
+footer{
+    background:#090c13;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:8px 0;
+    color:#ddd;
+}
+
+/* BOTÕES FLUTUANTES */
+.float{
+    position:fixed;
+    right:18px;
+    z-index:999;
+}
+
+.whats{
+    bottom:85px;
+}
+
+.insta{
+    bottom:20px;
+}
+
+.float a{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:26px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.35);
+}
+
+.whats a{
+    background:#25D366;
+}
+
+.insta a{
+    background:#E1306C;
+}
+
+@media(max-width:700px){
+
+header h1{
+    font-size:28px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.section h3{
+    font-size:28px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="Solumartín">
+
+<h1>Solumartín</h1>
+<p>Soluções Condominiais</p>
+
+<div class="top-buttons">
+<a href="https://web.ucondo.com.br/login.aspx" target="_blank">
+Condomínio Online
+</a>
+
+<a href="#app">Conheça o App</a>
+</div>
+
+</header>
+
+<section class="hero">
+<h2>Administração de <span>Condomínios</span></h2>
+
+<p>
+Gestão profissional, transparência, organização e atendimento moderno para síndicos e moradores.
+Cuidamos do financeiro, documentos, assembleias e toda rotina administrativa do condomínio.
+</p>
+</section>
+
+<section class="section">
+<h3>Nossos Serviços</h3>
+
+<div class="cards">
+
+<div class="card">
+<h4>Gestão Financeira</h4>
+<p>Controle completo das receitas, despesas, boletos e inadimplência.</p>
+</div>
+
+<div class="card">
+<h4>Prestação de Contas</h4>
+<p>Relatórios claros e transparentes com total acesso ao síndico.</p>
+</div>
+
+<div class="card">
+<h4>Assembleias</h4>
+<p>Organização de reuniões, editais, atas e suporte completo.</p>
+</div>
+
+<div class="card">
+<h4>Fornecedores</h4>
+<p>Gestão de contratos, manutenções e serviços essenciais.</p>
+</div>
+
+<div class="card">
+<h4>Atendimento</h4>
+<p>Suporte rápido para moradores, síndico e conselho.</p>
+</div>
+
+<div class="card">
+<h4>Administração Completa</h4>
+<p>Cuidamos de toda rotina administrativa do condomínio.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="app">
+<h3>Funcionalidades do App</h3>
+
+<div class="baloes">
+
+<div class="balao">
+<div class="circulo">📷</div>
+<h5>Leitura</h5>
+<p>Todas as leituras lançadas mensalmente com histórico fotográfico.</p>
+</div>
+
+<div class="balao">
+<div class="circulo">📩</div>
+<h5>Correspondências</h5>
+<p>Receba notificações via app e e-mail em tempo real.</p>
+</div>
+
+<div class="balao">
+<div class="circulo">💳</div>
+<h5>Boletos Online</h5>
+<p>Baixe ou emita segunda via de boletos facilmente.</p>
+</div>
+
+<div class="balao">
+<div class="circulo">🏢</div>
+<h5>Reservas</h5>
+<p>Reserve áreas comuns com controle total.</p>
+</div>
+
+<div class="balao">
+<div class="circulo">🔧</div>
+<h5>Chamados</h5>
+<p>Solicite manutenções, sugestões e acompanhe status.</p>
+</div>
+
+<div class="balao">
+<div class="circulo">📊</div>
+<h5>Balancetes</h5>
+<p>Acompanhe a situação financeira em tempo real.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section download">
+<h3>Baixe Nosso Aplicativo</h3>
+
+<p>Disponível para Android e iPhone</p>
+
+<div class="store-buttons">
+
+<a href="#" target="_blank">📱 Google Play</a>
+
+<a href="#" target="_blank">🍎 App Store</a>
+
+</div>
+</section>
+
+<footer>
+
+<p><strong>Solumartín Soluções Condominiais</strong></p>
+<p>📞 (54) 98166-7187</p>
+<p>📧 solumartin.solucoes@gmail.com</p>
+<p>🌐 www.solumartin.com.br</p>
+
+</footer>
+
+<!-- BOTÕES FLUTUANTES -->
+
+<div class="float whats">
+<a href="https://wa.me/5554981667187" target="_blank">☎</a>
+</div>
+
+<div class="float insta">
+<a href="https://www.instagram.com/solumartin_solucoes/" target="_blank">◎</a>
+</div>
+
+</body>
+</html>
