@@ -27,7 +27,7 @@ color:#fff;
 /* TOPO */
 header{
 background:linear-gradient(135deg,#04102e,#0f2f73,#04102e);
-padding:10px 20px 18px 20px;
+padding:12px 20px 18px;
 text-align:center;
 position:relative;
 box-shadow:0 4px 15px rgba(0,0,0,0.35);
@@ -39,24 +39,12 @@ max-width:95%;
 margin-bottom:8px;
 }
 
-header h1{
-font-size:52px;
-line-height:1.1;
-margin:0;
-font-weight:800;
-}
-
-header p{
-font-size:22px;
-color:#bdd6ff;
-margin:4px 0 14px 0;
-}
-
 .top-buttons{
 display:flex;
 justify-content:center;
 gap:14px;
 flex-wrap:wrap;
+margin-top:10px;
 }
 
 .top-buttons a{
@@ -74,45 +62,33 @@ background:#3b82f6;
 transform:translateY(-3px);
 }
 
-/* HERO */
-.hero{
-padding:35px 20px 55px 20px;
-text-align:center;
-background:linear-gradient(to bottom,#0b1c45,#050b18);
-}
-
-.hero h2{
-font-size:44px;
-margin-bottom:14px;
-}
-
-.hero span{
-color:#60a5fa;
-}
-
-.hero p{
-max-width:850px;
-margin:auto;
-font-size:21px;
-line-height:1.7;
-color:#d9d9d9;
-}
-
 /* SEÇÕES */
 .section{
-padding:70px 20px;
+padding:55px 20px;
 max-width:1300px;
 margin:auto;
 }
 
-.section h3{
+.section h2{
 text-align:center;
-font-size:42px;
-margin-bottom:50px;
+font-size:48px;
+margin-bottom:18px;
+}
+
+.section h2 span{
 color:#60a5fa;
 }
 
-/* CARDS */
+.section p.top-text{
+text-align:center;
+max-width:980px;
+margin:auto auto 45px;
+font-size:20px;
+line-height:1.7;
+color:#ddd;
+}
+
+/* SERVIÇOS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -133,7 +109,7 @@ transform:translateY(-6px);
 box-shadow:0 12px 25px rgba(0,0,0,0.35);
 }
 
-.card h4{
+.card h3{
 font-size:24px;
 margin-bottom:12px;
 }
@@ -143,7 +119,14 @@ line-height:1.7;
 color:#d7d7d7;
 }
 
-/* BALOES APP */
+/* APP */
+.app-title{
+text-align:center;
+font-size:42px;
+margin-bottom:45px;
+color:#60a5fa;
+}
+
 .baloes{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -167,7 +150,7 @@ font-size:34px;
 background:linear-gradient(135deg,#6d28d9,#16a34a);
 }
 
-.balao h5{
+.balao h4{
 font-size:22px;
 margin-bottom:10px;
 }
@@ -180,10 +163,17 @@ color:#ddd;
 /* DOWNLOAD */
 .download{
 text-align:center;
+padding-top:65px;
+}
+
+.download h2{
+font-size:42px;
+margin-bottom:10px;
+color:#60a5fa;
 }
 
 .download p{
-font-size:21px;
+font-size:20px;
 margin-bottom:25px;
 }
 
@@ -224,7 +214,7 @@ color:#d8d8d8;
 font-size:18px;
 }
 
-/* BOTÕES FLUTUANTES */
+/* FLUTUANTES */
 .float{
 position:fixed;
 right:18px;
@@ -268,28 +258,24 @@ background:linear-gradient(45deg,#833AB4,#E1306C,#F77737);
 /* RESPONSIVO */
 @media(max-width:768px){
 
-header h1{
-font-size:38px;
-}
-
-header p{
-font-size:18px;
-}
-
 header img{
 width:210px;
 }
 
-.hero h2{
+.section h2{
+font-size:34px;
+}
+
+.app-title{
 font-size:32px;
 }
 
-.hero p{
+.download h2{
+font-size:32px;
+}
+
+.section p.top-text{
 font-size:18px;
-}
-
-.section h3{
-font-size:32px;
 }
 
 }
@@ -302,11 +288,7 @@ font-size:32px;
 
 <img src="logo.png" alt="Solumartín">
 
-<h1>Solumartín</h1>
-<p>Soluções Condominiais</p>
-
 <div class="top-buttons">
-
 <a href="https://web.ucondo.com.br/login.aspx" target="_blank">
 Condomínio Online
 </a>
@@ -314,46 +296,39 @@ Condomínio Online
 <a href="#app">
 Conheça o App
 </a>
-
 </div>
 
 </header>
 
-<section class="hero">
+<section class="section">
 
 <h2>Administração de <span>Condomínios</span></h2>
 
-<p>
+<p class="top-text">
 Gestão moderna, transparente e profissional para síndicos e moradores.
 Financeiro, boletos, assembleias, atendimento e total organização condominial.
 </p>
 
-</section>
-
-<section class="section">
-
-<h3>Nossos Serviços</h3>
-
 <div class="cards">
 
 <div class="card">
-<h4>Gestão Financeira</h4>
+<h3>Gestão Financeira</h3>
 <p>Controle completo de receitas, despesas e inadimplência.</p>
 </div>
 
 <div class="card">
-<h4>Prestação de Contas</h4>
-<p>Relatórios claros e total transparência mensal.</p>
+<h3>Prestação de Contas</h3>
+<p>Relatórios claros, detalhados e transparência mensal.</p>
 </div>
 
 <div class="card">
-<h4>Assembleias</h4>
+<h3>Assembleias</h3>
 <p>Organização de reuniões, atas e suporte administrativo.</p>
 </div>
 
 <div class="card">
-<h4>Fornecedores</h4>
-<p>Gestão de contratos e serviços do condomínio.</p>
+<h3>Fornecedores</h3>
+<p>Gestão de contratos e serviços essenciais do condomínio.</p>
 </div>
 
 </div>
@@ -362,43 +337,43 @@ Financeiro, boletos, assembleias, atendimento e total organização condominial.
 
 <section class="section" id="app">
 
-<h3>Funcionalidades do App</h3>
+<h2 class="app-title">Funcionalidades do App</h2>
 
 <div class="baloes">
 
 <div class="balao">
 <div class="circulo"><i class="fa-solid fa-camera"></i></div>
-<h5>Leitura</h5>
+<h4>Leitura</h4>
 <p>Lançamentos mensais com histórico fotográfico.</p>
 </div>
 
 <div class="balao">
 <div class="circulo"><i class="fa-solid fa-envelope"></i></div>
-<h5>Correspondências</h5>
+<h4>Correspondências</h4>
 <p>Notificações via aplicativo e e-mail.</p>
 </div>
 
 <div class="balao">
 <div class="circulo"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-<h5>Boletos Online</h5>
-<p>Baixe ou emita 2ª via com rapidez.</p>
+<h4>Boletos Online</h4>
+<p>Baixe ou emita segunda via facilmente.</p>
 </div>
 
 <div class="balao">
 <div class="circulo"><i class="fa-solid fa-building"></i></div>
-<h5>Reservas</h5>
+<h4>Reservas</h4>
 <p>Agendamento de áreas comuns online.</p>
 </div>
 
 <div class="balao">
 <div class="circulo"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-<h5>Chamados</h5>
+<h4>Chamados</h4>
 <p>Solicitações e manutenções organizadas.</p>
 </div>
 
 <div class="balao">
 <div class="circulo"><i class="fa-solid fa-chart-line"></i></div>
-<h5>Balancetes</h5>
+<h4>Balancetes</h4>
 <p>Acompanhe a situação financeira em tempo real.</p>
 </div>
 
@@ -408,7 +383,7 @@ Financeiro, boletos, assembleias, atendimento e total organização condominial.
 
 <section class="section download">
 
-<h3>Baixe o Aplicativo</h3>
+<h2>Baixe o Aplicativo</h2>
 
 <p>Disponível para Android e iPhone</p>
 
@@ -427,15 +402,11 @@ Financeiro, boletos, assembleias, atendimento e total organização condominial.
 </section>
 
 <footer>
-
 <p><strong>Solumartín Soluções Condominiais</strong></p>
 <p>📞 (54) 98166-7187</p>
 <p>📧 solumartin.solucoes@gmail.com</p>
 <p>🌐 www.solumartin.com.br</p>
-
 </footer>
-
-<!-- FLUTUANTES -->
 
 <div class="float whats">
 <a href="https://wa.me/5554981667187" target="_blank">
