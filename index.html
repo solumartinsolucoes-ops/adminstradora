@@ -17,7 +17,6 @@ gtag('config', 'AW-17539477596');
 </script>
 
 <style>
-/* TODO seu CSS permanece exatamente igual */
 *{
 margin:0;
 padding:0;
@@ -72,7 +71,234 @@ background:#3b82f6;
 transform:translateY(-3px);
 }
 
-/* restante do CSS igual... */
+/* SEÇÕES */
+.section{
+padding:55px 20px;
+max-width:1300px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+font-size:48px;
+margin-bottom:18px;
+}
+
+.section h2 span{
+color:#60a5fa;
+}
+
+.section p.top-text{
+text-align:center;
+max-width:980px;
+margin:auto auto 45px;
+font-size:20px;
+line-height:1.7;
+color:#ddd;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:linear-gradient(180deg,#11192d,#0a0f1d);
+padding:28px;
+border-radius:18px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:12px;
+}
+
+.card p{
+line-height:1.7;
+color:#d7d7d7;
+}
+
+/* APP */
+.app-title{
+text-align:center;
+font-size:42px;
+margin-bottom:45px;
+color:#60a5fa;
+}
+
+.baloes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.balao{
+text-align:center;
+}
+
+.circulo{
+width:130px;
+height:130px;
+border-radius:50%;
+margin:auto;
+margin-bottom:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+background:linear-gradient(135deg,#6d28d9,#16a34a);
+}
+
+.balao h4{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.balao p{
+line-height:1.7;
+color:#ddd;
+}
+
+/* DOWNLOAD */
+.download{
+text-align:center;
+padding-top:65px;
+}
+
+.download h2{
+font-size:42px;
+margin-bottom:10px;
+color:#60a5fa;
+}
+
+.download p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.store-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.store-buttons a{
+background:#111827;
+border:1px solid #2563eb;
+padding:16px 28px;
+border-radius:14px;
+color:#fff;
+text-decoration:none;
+font-weight:700;
+transition:0.3s;
+font-size:18px;
+}
+
+.store-buttons a:hover{
+background:#2563eb;
+}
+
+/* RODAPÉ */
+footer{
+background:#04070f;
+padding:35px 20px;
+text-align:center;
+margin-top:50px;
+}
+
+footer p{
+margin:7px 0;
+color:#d8d8d8;
+font-size:18px;
+}
+
+/* FLUTUANTES */
+.float{
+position:fixed;
+right:18px;
+z-index:999;
+}
+
+.whats{
+bottom:88px;
+}
+
+.insta{
+bottom:20px;
+}
+
+.float a{
+width:62px;
+height:62px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:31px;
+color:#fff;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.35);
+transition:0.3s;
+}
+
+.float a:hover{
+transform:scale(1.08);
+}
+
+.whats a{
+background:#25D366;
+}
+
+.insta a{
+background:linear-gradient(45deg,#833AB4,#E1306C,#F77737);
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+header img{
+width:250px;
+}
+
+.section h2{
+font-size:34px;
+}
+
+.app-title{
+font-size:32px;
+}
+
+.download h2{
+font-size:32px;
+}
+
+.section p.top-text{
+font-size:18px;
+}
+
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:100%;
+max-width:320px;
+text-align:center;
+}
+
+}
 </style>
 </head>
 
@@ -84,121 +310,19 @@ transform:translateY(-3px);
 
 <div class="top-buttons">
 
-<a href="https://web.ucondo.com.br/login.aspx" target="_blank">
-Condomínio Online
-</a>
-
-<a href="#app">
-Conheça o App
-</a>
-
-<a href="solicitacaodecontato/">
-Solicitação de Contato
-</a>
+<a href="https://web.ucondo.com.br/login.aspx" target="_blank">Condomínio Online</a>
+<a href="#app">Conheça o App</a>
+<a href="solicitacaodecontato/">Solicitação de Contato</a>
 
 </div>
 
 </header>
 
 <section class="section">
-
 <h2>Administração de <span>Condomínios</span></h2>
-
 <p class="top-text">
 Gestão moderna, transparente e profissional para síndicos e moradores.
-Financeiro, boletos, assembleias, atendimento e total organização condominial.
 </p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Gestão Financeira</h3>
-<p>Controle completo de receitas, despesas e inadimplência.</p>
-</div>
-
-<div class="card">
-<h3>Prestação de Contas</h3>
-<p>Relatórios claros, detalhados e transparência mensal.</p>
-</div>
-
-<div class="card">
-<h3>Assembleias</h3>
-<p>Organização de reuniões, atas e suporte administrativo.</p>
-</div>
-
-<div class="card">
-<h3>Fornecedores</h3>
-<p>Gestão de contratos e serviços essenciais do condomínio.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section" id="app">
-
-<h2 class="app-title">Funcionalidades do App</h2>
-
-<div class="baloes">
-
-<div class="balao">
-<div class="circulo"><i class="fa-solid fa-camera"></i></div>
-<h4>Leitura</h4>
-<p>Lançamentos mensais com histórico fotográfico.</p>
-</div>
-
-<div class="balao">
-<div class="circulo"><i class="fa-solid fa-envelope"></i></div>
-<h4>Correspondências</h4>
-<p>Notificações via aplicativo e e-mail.</p>
-</div>
-
-<div class="balao">
-<div class="circulo"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-<h4>Boletos Online</h4>
-<p>Baixe ou emita segunda via facilmente.</p>
-</div>
-
-<div class="balao">
-<div class="circulo"><i class="fa-solid fa-building"></i></div>
-<h4>Reservas</h4>
-<p>Agendamento de áreas comuns online.</p>
-</div>
-
-<div class="balao">
-<div class="circulo"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-<h4>Chamados</h4>
-<p>Solicitações e manutenções organizadas.</p>
-</div>
-
-<div class="balao">
-<div class="circulo"><i class="fa-solid fa-chart-line"></i></div>
-<h4>Balancetes</h4>
-<p>Acompanhe a situação financeira em tempo real.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section download">
-
-<h2>Baixe o Aplicativo</h2>
-
-<p>Disponível para Android e iPhone</p>
-
-<div class="store-buttons">
-
-<a href="https://play.google.com/store/apps/details?id=br.com.ucondo.android&hl=pt_BR" target="_blank">
-<i class="fa-brands fa-google-play"></i> Google Play
-</a>
-
-<a href="https://apps.apple.com/br/app/ucondo/id1062839687" target="_blank">
-<i class="fa-brands fa-apple"></i> App Store
-</a>
-
-</div>
-
 </section>
 
 <footer>
@@ -207,46 +331,12 @@ Financeiro, boletos, assembleias, atendimento e total organização condominial.
 
 <p>
 <a href="https://wa.me/5554981667187" target="_blank"
-onclick="gtag('event','conversion',{'send_to':'AW-17539477596/rACQCN0Qx6UcENzgvKtB'});"
-style="color:#ffffff;text-decoration:none;">
-<i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>
+onclick="gtag('event','conversion',{'send_to':'AW-17539477596/rACQCN0Qx6UcENzgvKtB'});">
 WhatsApp: (54) 98166-7187
 </a>
 </p>
 
-<p>
-<a href="mailto:solumartin.solucoes@gmail.com" style="color:#ffffff;text-decoration:none;">
-📧 solumartin.solucoes@gmail.com
-</a>
-</p>
-
-<p>
-<a href="https://www.instagram.com/solumartin_solucoes/" target="_blank" style="color:#ffffff;text-decoration:none;">
-<i class="fa-brands fa-instagram" style="color:#E1306C;"></i>
-Instagram: @solumartin_solucoes
-</a>
-</p>
-
 </footer>
-
-<div class="float whats">
-<a href="https://wa.me/5554981667187" target="_blank"
-onclick="gtag('event','conversion',{'send_to':'AW-17539477596/rACQCN0Qx6UcENzgvKtB'});">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-</div>
-
-<div class="float insta">
-<a href="https://www.instagram.com/solumartin_solucoes/" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-
-<script>
-window.onload = function(){
-window.scrollTo(0,0);
-};
-</script>
 
 </body>
 </html>
